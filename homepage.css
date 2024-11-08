@@ -1,0 +1,166 @@
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.homepage {
+  text-align: center;
+}
+
+.logo {
+  color: #fafafc;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.logo:hover {
+  color: #22009c; /* Change color on hover */
+}
+/* Social Icons */
+.social-icons {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons li {
+  display: inline-block;
+}
+
+.social-icons a {
+  color: #fafafc;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #22009c; /* Hover color */
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(18, 134, 243, 0.9);
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.navbar:hover {
+  background-color: rgb(9, 213, 240); /* Darken on hover */
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-links a:hover {
+  color: #000000; /* Change color on hover */
+}
+
+.login-button {
+  background-color: yellow;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.hero-section {
+  background-image: url('../assets/images/home.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh; 
+  display: flex;
+  justify-content: center; /* Center quote vertically and horizontally */
+  align-items: center;
+  color: white;
+  padding: 20px;
+  position: relative;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+}
+
+.quote {
+  position: relative; /* Position relative to stack on top of the overlay */
+  z-index: 1; /* Ensure text is above overlay */
+}
+
+.quote h1 {
+  font-size: 36px; /* Larger font for emphasis */
+  text-align: center;
+  margin-bottom: 10px; /* Space below the title */
+  animation: fadeIn 1s ease-in; /* Fade-in animation */
+}
+
+.quote p {
+  font-size: 18px; /* Adjusted size for better readability */
+  text-align: center;
+  margin: 0;
+  animation: fadeIn 1.2s ease-in; /* Fade-in animation with delay */
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center; /* Center buttons */
+}
+
+.explore-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold; /* Bold text for buttons */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth animation */
+}
+
+.explore-button:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.explore-button.orange {
+  background-color: #ff2600;
+  color: white;
+}
+
+.explore-button.yellow {
+  background-color: yellow;
+  color: black;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* Slide in from the top */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

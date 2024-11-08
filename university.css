@@ -1,0 +1,165 @@
+/* Page Styling */
+.universities-page {
+  display: flex;
+  background-color: white;
+  color: #333;
+  background-image: url('../assets/images/home2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 220px;
+  background-color: #333;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.sidebar h1 {
+  font-size: 1.5em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+/* Main Content Styling */
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Card Container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 1200px;
+}
+
+/* University Card Styling */
+.university-card {
+  background-color: #0aadf8;
+  border-radius: 8px;
+  width: 220px;
+  padding: 10px; /* Reduced padding */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 9%;
+  position: centere;
+  min-height: 280px; /* Set minimum height to control card size */
+  max-height: 320px; /* Added max-height to limit overall card size */
+}
+
+.university-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Image */
+.card-image {
+  width: 80px; /* Reduced size */
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-bottom: 10px;
+}
+
+/* Text Content Styling */
+.university-card p {
+  margin: 5px 0;
+  font-size: 0.9em; /* Smaller font size */
+  line-height: 1.2;
+}
+university-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 8px;
+  overflow: hidden; /* To apply rounded corners */
+  background-color: #fff;
+}
+
+.university-table th, .university-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.university-table th {
+  background-color: #0aadf8; /* Header color */
+  color: white;
+  font-weight: bold;
+}
+
+.university-table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light gray for even rows */
+}
+
+.university-table tr:hover {
+  background-color: #e0f7ff; /* Light blue on hover */
+  transition: background-color 0.2s ease; /* Smooth hover transition */
+}
+
+.university-table th:first-child,
+.university-table td:first-child {
+  border-top-left-radius: 8px; /* Rounded top-left corner */
+}
+
+.university-table th:last-child,
+.university-table td:last-child {
+  border-top-right-radius: 8px; /* Rounded top-right corner */
+}
+
+.university-table td {
+  color: #333;
+}
+
+.no-data {
+  text-align: center;
+  color: #888;
+  font-size: 1.1em;
+  padding: 20px;
+}
+
+/* Button Styling */
+button,
+.apply-button,
+.apply-form-button,
+.update-profile-button,
+.confirm-apply-button,
+.view-applications-button,
+.view-profile-button {
+  background-color: #00ccff;
+  color: white;
+  padding: 6px 12px; /* Smaller padding */
+  border: none;
+  border-radius: 5px;
+  font-size: 0.85em;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 0.3s;
+}
+
+button:hover,
+.apply-button:hover,
+.apply-form-button:hover,
+.update-profile-button:hover,
+.confirm-apply-button:hover,
+.view-applications-button:hover,
+.view-profile-button:hover {
+  background-color: #0099cc;
+}

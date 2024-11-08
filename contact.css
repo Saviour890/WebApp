@@ -1,0 +1,86 @@
+.contact-us-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px; /* Increased padding for more space */
+  text-align: center;
+  color: #ffffff;
+  background-image: url('../assets/images/home2.jpg');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: auto; /* Set to auto for responsiveness */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+.contact-us-page h1 {
+  margin-bottom: 20px;
+  font-size: 2rem; /* Larger font size for emphasis */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+}
+
+.contact-us-page p {
+  margin-bottom: 30px;
+  font-size: 1.2rem; /* Slightly larger text for readability */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.8); /* White background for form */
+  padding: 20px; /* Padding inside the form */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for form */
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  text-align: left;
+  font-weight: bold; /* Bold labels for emphasis */
+  color: #333; /* Darker color for contrast */
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px; /* Increased padding */
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border 0.3s ease; /* Smooth transition for focus effect */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1px solid #35ace4; /* Highlight border color on focus */
+  outline: none; /* Remove outline */
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: none; /* Disable resizing for better layout */
+}
+
+.submit-button {
+  padding: 12px 20px; /* Increased padding for a larger button */
+  background-color: #3ac1eb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem; /* Larger font size */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.submit-button:hover {
+  background-color: #cc2000; /* Darker color on hover */
+}
+
+.submission-success {
+  padding: 20px;
+  background-color: #dff0d8; /* Success background color */
+  border: 1px solid #d6e9c6; /* Success border color */
+  color: #ff2600; /* Success text color */
+  border-radius: 5px;
+  margin-top: 20px; /* Space above success message */
+}
